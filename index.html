@@ -37,7 +37,7 @@
     /* Custom Checkout Button */
     #indicators-checkout .custom-checkout-btn {
       width: 100%;
-      padding: 17px 24px;
+      padding: 18px 24px;
       background: linear-gradient(180deg, #3678e6 0%, #2159de 100%);
       color: white;
       font-size: 16px;
@@ -50,7 +50,7 @@
       position: relative;
       overflow: hidden;
       box-shadow: 0 4px 0 #2159de, 0 6px 12px rgba(33,89,222,0.35), inset 0 1px 0 rgba(255,255,255,0.15), inset 0 0 0 1px rgba(0,0,0,0.08), inset 0 -1px 3px rgba(0,0,0,0.1);
-      margin-top: 18px;
+      margin-top: 4px;
       animation: subtleBounce 3s ease-in-out infinite;
     }
 
@@ -72,19 +72,6 @@
       box-shadow: 0 2px 0 #2159de, 0 3px 6px rgba(33,89,222,0.35), inset 0 1px 0 rgba(255,255,255,0.15), inset 0 0 0 1px rgba(0,0,0,0.08), inset 0 -1px 3px rgba(0,0,0,0.1);
     }
 
-    #indicators-checkout .bottom-addons {
-      margin-top: 4px;
-      margin-bottom: 0;
-    }
-
-    #indicators-checkout .bottom-addons .addon-card {
-      margin-bottom: 8px;
-    }
-
-    #indicators-checkout .bottom-addons .addon-card:last-child {
-      margin-bottom: 0;
-    }
-
     #indicators-checkout .checkout-badges {
       margin-top: 12px;
       text-align: center;
@@ -92,8 +79,8 @@
     }
 
     #indicators-checkout .checkout-badges img {
-      width: 88%;
-      max-width: 88%;
+      width: 83%;
+      max-width: 83%;
       height: auto;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
@@ -120,7 +107,7 @@
       align-items: flex-start;
       gap: 26px;
       padding: 16px;
-      background: #fff9dc;
+      background: rgba(255, 249, 220, 0.92);
       border: 2.1px dashed #888888;
       border-radius: 12px;
       margin-bottom: 12px;
@@ -159,7 +146,7 @@
     }
 
     #indicators-checkout .addon-card:hover {
-      background: #fff7d4;
+      background: rgba(255, 247, 212, 0.92);
       border-color: #666666;
     }
 
@@ -547,75 +534,9 @@
           ></div>
         </div>
 
-        <!-- Bottom Add-ons Section -->
-        <div class="bottom-addons">
-          <!-- Risk Calculator Addon -->
-          <div class="addon-card" data-addon="riskCalc">
-            <div class="addon-icon">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="4" width="32" height="32" rx="6" fill="#e5e7eb"/>
-                <rect x="10" y="12" width="20" height="16" rx="2" fill="#9ca3af"/>
-                <rect x="13" y="15" width="6" height="4" rx="1" fill="#d1d5db"/>
-                <rect x="21" y="15" width="6" height="4" rx="1" fill="#d1d5db"/>
-                <rect x="13" y="21" width="6" height="4" rx="1" fill="#d1d5db"/>
-                <rect x="21" y="21" width="6" height="4" rx="1" fill="#d1d5db"/>
-              </svg>
-            </div>
-            <div class="addon-content">
-              <h4 class="addon-title">TJR's Risk Management Calculator</h4>
-              <div class="addon-pricing">
-                <span class="addon-price-current">$27</span>
-                <span class="addon-price-original">$79</span>
-              </div>
-              <button class="addon-details" data-toggle-details="riskCalc">
-                <span class="info-icon">i</span>
-                Get more details
-              </button>
-            </div>
-            <button class="addon-checkbox" data-addon-checkbox="riskCalc" type="button"></button>
-            <div class="addon-expanded-content">
-              <button class="addon-close-btn" data-close-details="riskCalc" type="button" aria-label="Close details">×</button>
-              <div class="addon-expanded-text">
-                The ultimate solution for optimizing your trading decisions. Perfect for everyday use, it provides long-lasting insights and protection against market volatility. Equipped with advanced algorithms and real-time data analysis, this tool helps you identify potential risks and maximize your trading potential across multiple strategies and timeframes.
-              </div>
-            </div>
-          </div>
-
-          <!-- Trading Journal Addon -->
-          <div class="addon-card" data-addon="tradingJournal">
-            <div class="addon-icon">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="4" width="32" height="32" rx="6" fill="#e5e7eb"/>
-                <rect x="10" y="10" width="20" height="20" rx="2" fill="#9ca3af"/>
-                <line x1="14" y1="15" x2="26" y2="15" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
-                <line x1="14" y1="20" x2="26" y2="20" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
-                <line x1="14" y1="25" x2="22" y2="25" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="addon-content">
-              <h4 class="addon-title">TJR's Trading Journal 2.0</h4>
-              <div class="addon-pricing">
-                <span class="addon-price-current">$47</span>
-                <span class="addon-price-original">$199</span>
-              </div>
-              <button class="addon-details" data-toggle-details="tradingJournal">
-                <span class="info-icon">i</span>
-                Get more details
-              </button>
-            </div>
-            <button class="addon-checkbox" data-addon-checkbox="tradingJournal" type="button"></button>
-            <div class="addon-expanded-content">
-              <button class="addon-close-btn" data-close-details="tradingJournal" type="button" aria-label="Close details">×</button>
-              <div class="addon-expanded-text">
-                Track every trade with precision using our comprehensive trading journal platform. Record detailed entries for each trade, analyze patterns, and optimize your strategy over time. Features include real-time performance metrics, win/loss analysis, and customizable templates to help you maintain consistency and improve your trading discipline and profitability.
-              </div>
-            </div>
-          </div>
-        </div>
-
         <button class="custom-checkout-btn" id="custom-checkout-btn" type="button">Get Access Now</button>
         <div class="checkout-badges">
-          <img src="https://i.imgur.com/EcSzWS9.png" alt="Secure checkout" style="max-width:100%;height:auto;">
+          <img src="https://i.imgur.com/OMTRxXL.png" alt="Secure checkout">
         </div>
       </div>
 
