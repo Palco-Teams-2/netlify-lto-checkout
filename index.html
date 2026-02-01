@@ -55,7 +55,7 @@
       align-items: flex-start;
       gap: 26px;
       padding: 16px;
-      background: transparent;
+      background: #fffdf8;
       border: 2.5px dashed rgba(0, 0, 0, 0.85);
       border-radius: 12px;
       margin-bottom: 12px;
@@ -64,25 +64,9 @@
       overflow: visible;
     }
 
-    #indicators-checkout .addon-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(255, 253, 245, 0.7);
-      pointer-events: none;
-      border-radius: 12px;
-      z-index: -1;
-    }
-
-    #indicators-checkout .addon-card:hover::before {
-      background: rgba(255, 252, 240, 0.85);
-    }
-
     #indicators-checkout .addon-card:hover {
-      border-color: #333333;
+      background: #fffcf5;
+      border-color: rgba(0, 0, 0, 0.95);
     }
 
     #indicators-checkout .addon-card.selected {
