@@ -56,7 +56,7 @@
       gap: 26px;
       padding: 16px;
       background: transparent;
-      border: 2.5px dashed #000000;
+      border: 2.5px dashed rgba(0, 0, 0, 0.85);
       border-radius: 12px;
       margin-bottom: 12px;
       transition: all 0.3s ease;
@@ -71,14 +71,14 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(90deg, #ffffff 0%, #ffffff 15%, rgba(34, 197, 94, 0.03) 15%, rgba(34, 197, 94, 0.03) 100%);
+      background: rgba(255, 253, 245, 0.7);
       pointer-events: none;
       border-radius: 12px;
       z-index: -1;
     }
 
     #indicators-checkout .addon-card:hover::before {
-      background: linear-gradient(90deg, #ffffff 0%, #ffffff 15%, rgba(34, 197, 94, 0.06) 15%, rgba(34, 197, 94, 0.06) 100%);
+      background: rgba(255, 252, 240, 0.85);
     }
 
     #indicators-checkout .addon-card:hover {
@@ -192,6 +192,9 @@
       background: #ffffff;
       margin-left: -16px;
       margin-right: -16px;
+      margin-bottom: -16px;
+      border-radius: 0 0 10px 10px;
+      z-index: 1;
     }
 
     #indicators-checkout .addon-card.expanded .addon-expanded-content {
